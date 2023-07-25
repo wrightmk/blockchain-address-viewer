@@ -94,7 +94,7 @@ export default async function Home({ params }) {
       </div>
 
       {data
-        .sort((a, b) => a.timeStamp - b.timeStamp)
+        .sort((a, b) => b.timeStamp - a.timeStamp)
         .map((d) => (
           <div
             key={d.hash}
